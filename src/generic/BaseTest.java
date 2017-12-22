@@ -30,8 +30,8 @@ public class BaseTest implements IAutoconst
 	  @BeforeMethod(alwaysRun=true)
 	  public void openApplication() throws Exception
 	  {
-	       driver = new ChromeDriver();
-		 // driver = new FirefoxDriver();
+	     //  driver = new ChromeDriver();
+		  driver = new FirefoxDriver();
 		 String strITO = Property.getValue(SETTINGS_PATH,"ITO");
  	    long ito = Long.parseLong(strITO);
  	  //  log.info("set ITO : "+ito+" sec");

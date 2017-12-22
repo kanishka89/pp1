@@ -17,7 +17,16 @@ public class validLogin extends BaseTest
 	       	  driver.findElement(By.name("uid")).sendKeys(un);							
 	          driver.findElement(By.name("password")).sendKeys(pw);							
 	          driver.findElement(By.name("btnLogin")).click();	
-		      Reporter.log("valid login",true);
+		      Reporter.log("valid login test run",true);
+		      
+		      String url = System.getProperty("url");
+		      System.out.println("Url from jekins : "+url);
+		      
+		      String username = System.getProperty("username");
+		      System.out.println("Username from jekins : "+username);
+		      
+		      String environment = System.getProperty("environment");
+		      System.out.println("Environment from jekins : "+environment);
 		
 	}		
 }
